@@ -1,3 +1,5 @@
+
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -50,8 +52,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 48px;
-    margin-top: 40px;
-    padding-top: 28px;
+    margin-top: 0;
+    padding-top: 0;
     border-top: 1px solid var(--c-border);
     opacity: 0;
     animation: fadeUp 0.8s ease 0.50s both;
@@ -80,9 +82,9 @@
 .hero-animation-zone {
     position: absolute;
     right: 4%;
-    top: 20px;
-    width: clamp(200px, 26vw, 360px);
-    height: clamp(260px, 38vw, 460px);
+    top: 8%;
+    width: clamp(300px, 26vw, 500px);
+    height: clamp(240px, 38vw, 400px);
     z-index: 1;
     border-radius: var(--r-xl);
     border: 1.5px dashed var(--c-border2);
@@ -341,7 +343,7 @@
 }
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -361,7 +363,7 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--c-accent), transparent);
+    background: linear-gradient(90deg, transparent, var(--mcolor), transparent);
     opacity: 0;
     transition: opacity 0.28s;
 }
@@ -386,9 +388,21 @@
     font-family: var(--font-mono);
     font-size: 10px;
     letter-spacing: 0.14em;
-    color: var(--c-accent);
+    color: var(--mcolor);
     text-transform: uppercase;
     margin-bottom: 12px;
+}
+.mgreen {
+    --mcolor: green;
+}
+.mblue {
+    --mcolor: blue;
+}
+.myellow {
+    --mcolor: yellow;
+}
+.mred {
+    --mcolor: red;
 }
 .process-card h4 {
     font-size: 14px;
